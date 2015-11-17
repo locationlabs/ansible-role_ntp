@@ -1,0 +1,6 @@
+---
+- name: be sure ntp is installed
+  apt: pkg=ntp state=installed
+
+- name: be sure ntpd is running and enabled
+  service: name=ntp state=running enabled=yes
